@@ -34,7 +34,8 @@ jobs:
         with:
           gradle-version: wrapper
           cache-disabled: true
-          validate-wrappers: false
+          wrapper-validation: true
+          allow-checksums: a5e75110d96b4eac2100076f6af6a5ca5029cd440f07736425350fb4cf308b42
 
       - name: Decode Debug Keystore
         run: |
