@@ -485,10 +485,10 @@ fun HomeScreen(onSearchClick: () -> Unit = {}, onCameraClick: () -> Unit = {}, o
                Row(
                    verticalAlignment = Alignment.CenterVertically
                ) {
-                   AsyncImage(
-                       model = "https://storage.googleapis.com/aistudio-chat-blob-store/b20464f1d43a60a7d97ab1607ef8987b.jpg",
+                   Image(
+                       painter = androidx.compose.ui.res.painterResource(id = R.drawable.circle_bazar_icon_1784463007760),
                        contentDescription = "Logo",
-                       modifier = Modifier.size(32.dp).clip(CircleShape),
+                       modifier = Modifier.size(28.dp).clip(CircleShape),
                        contentScale = ContentScale.Crop
                    )
                    Spacer(modifier = Modifier.width(10.dp))
@@ -498,7 +498,7 @@ fun HomeScreen(onSearchClick: () -> Unit = {}, onCameraClick: () -> Unit = {}, o
                            fontWeight = FontWeight.ExtraBold,
                            fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
                            fontFamily = FontFamily.SansSerif,
-                           fontSize = 20.sp,
+                           fontSize = 18.sp,
                            color = Color(0xFF00643C)
                        )
                    )
@@ -509,8 +509,8 @@ fun HomeScreen(onSearchClick: () -> Unit = {}, onCameraClick: () -> Unit = {}, o
                    horizontalArrangement = Arrangement.spacedBy(16.dp),
                    verticalAlignment = Alignment.CenterVertically
                ) {
-                   Icon(painter = androidx.compose.ui.res.painterResource(R.drawable.ic_custom_search), contentDescription = "Search", tint = Color(0xFF333333), modifier = Modifier.size(22.dp).clickable { onSearchClick() })
-                   Icon(painter = androidx.compose.ui.res.painterResource(R.drawable.ic_custom_notification), contentDescription = "Notifications", tint = Color(0xFF333333), modifier = Modifier.size(22.dp).clickable { })
+                   Icon(painter = androidx.compose.ui.res.painterResource(R.drawable.ic_custom_search), contentDescription = "Search", tint = Color(0xFF333333), modifier = Modifier.size(20.dp).clickable { onSearchClick() })
+                   Icon(painter = androidx.compose.ui.res.painterResource(R.drawable.ic_custom_notification), contentDescription = "Notifications", tint = Color(0xFF333333), modifier = Modifier.size(20.dp).clickable { })
                }
            }
        }
