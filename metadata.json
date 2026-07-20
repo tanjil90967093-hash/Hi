@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Circle Bazar",
+  "description": "A premium multi-vendor Android shopping application with a green theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
